@@ -269,7 +269,7 @@ if __name__ == '__main__':
     parser.add_argument('-l', dest='LHOST',help= "Local host")
     args = parser.parse_args()
     
-    req_args=3
+    req_args=2
     if len(vars(args)) < req_args:
         parser.print_usage()
         exit()
