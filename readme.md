@@ -2,6 +2,6 @@
 
 $ sudo pip install -r requirements.txt
 
-$ sudo fullpwnMonitored.py -t <Target> -l <LHOST>
+$ sudo fullpwnMonitored.py -I IP -l LHOST
 
 Please make sure to read and understand the script. Dont be a skiddie.
