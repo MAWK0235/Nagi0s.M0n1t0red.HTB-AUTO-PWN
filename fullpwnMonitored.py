@@ -264,17 +264,18 @@ if __name__ == '__main__':
      {Style.RESET_ALL}                                                                                      
     """
     print(ascii_art)
-    parser = argparse.ArgumentParser(description="AutoPwn Script for Bizness HTB machine")
-    parser.add_argument('-t', dest='Target')
-    parser.add_argument('-l', dest='LHOST')
+    parser = argparse.ArgumentParser(description="AutoPwn Script for Bizness HTB machine", usage= "sudo fullpwnMonitored.py -i <IP> -l <LHOST>")
+    parser.add_argument('-i', dest='IP',help= "Target IP ")
+    parser.add_argument('-l', dest='LHOST',help= "Local host")
     args = parser.parse_args()
-    req_args = 2
     
-    if len(vars(args)) > req_args:
+    req_args=3
+    if len(vars(args)) < req_args:
         parser.print_usage()
+        exit()
     
     host = "nagios.monitored.htb"
-    host_entry = f"{args.Target} nagios.monitored.htb"
+    host_entry = f"{args.IP} nagios.monitored.htb"
     
     if not is_host_entry_present(host):
         add_host_entry(host_entry)
