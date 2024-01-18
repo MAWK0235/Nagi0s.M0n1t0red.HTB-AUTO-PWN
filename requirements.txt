@@ -1,5 +1,4 @@
 requests
-subprocess
 argparse
 re
 urllib3
