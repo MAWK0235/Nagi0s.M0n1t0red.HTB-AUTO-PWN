@@ -264,7 +264,7 @@ if __name__ == '__main__':
      {Style.RESET_ALL}                                                                                      
     """
     print(ascii_art)
-    parser = argparse.ArgumentParser(description="AutoPwn Script for Bizness HTB machine", usage= "sudo fullpwnMonitored.py -i <IP> -l <LHOST>")
+    parser = argparse.ArgumentParser(description="AutoPwn Script for Monitored HTB machine", usage= "sudo fullpwnMonitored.py -i <IP> -l <LHOST>")
     parser.add_argument('-i', dest='IP',help= "Target IP ")
     parser.add_argument('-l', dest='LHOST',help= "Local host")
     args = parser.parse_args()
