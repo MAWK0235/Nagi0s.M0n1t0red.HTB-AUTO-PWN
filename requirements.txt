@@ -1,0 +1,12 @@
+requests
+subprocess
+argparse
+re
+urllib3
+os
+pickle
+random
+string
+paramiko
+pycryptodome
+colorama
